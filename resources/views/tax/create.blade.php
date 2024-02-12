@@ -6,10 +6,10 @@
         <div class="container">
 
             <div class="d-flex justify-content-between align-items-center">
-                <h2>Tax Create</h2>
+                <h2>Formulario Tax 2023</h2>
                 <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li>Portfolio</li>
+                    <li><a href="#">Inicio</a></li>
+                    <li>Formulario Tax 2023</li>
                 </ol>
             </div>
 
@@ -60,19 +60,19 @@
                             <div class="col-lg-4 info">
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Location:</h4>
-                                <p>A108 Adam Street<br>New York, NY 535022</p>
+                                <p>24215 Kuykendahl Rd<br>Tomball, TX 77375</p>
                             </div>
 
                             <div class="col-lg-4 info mt-4 mt-lg-0">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>info@example.com<br>contact@example.com</p>
+                                <p>lugosimmigration@gmail.com</p>
                             </div>
 
                             <div class="col-lg-4 info mt-4 mt-lg-0">
                                 <i class="bi bi-phone"></i>
                                 <h4>Call:</h4>
-                                <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+                                <p>+1 (954) 708-9776</p>
                             </div>
                         </div>
                     </div>
