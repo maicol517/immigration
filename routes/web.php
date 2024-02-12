@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TaxController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Route::get('/', HomeController::class);
+Route::resource('tax', TaxController::class)->names('tax');
+
+/*Route::get('tax', [TaxController::class, 'index']);
+Route::get('tax/create', TaxController::class, 'create');*/
+//Route::get('tax', TaxController::class, 'index')->name('tax.index');
+//Route::post('/tax', TaxController::class, 'store')->name('tax.store');
 
 Route::middleware([
     'auth:sanctum',
