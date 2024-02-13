@@ -27,7 +27,7 @@
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ asset('assets/css/style.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets/css/style.css')}}" rel="stylesheet"> 
 
   <!-- =======================================================
   * Template Name: Company
@@ -44,7 +44,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html"><span>Lugo's</span> Immigration LLC</a></h1>
+      <h1 class="logo me-auto"><a href="#"><span>Lugo's</span> Immigration LLC</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -55,7 +55,7 @@
           <li class="dropdown"><a href="#"><span>Formularios</span> <i class="bi bi-chevron-down"></i></a>
             <ul>           
               <li><a href="#">Parol Humanitario</a></li>
-              <li><a href="#">Tax</a></li>
+              <li><a href="{{ route('tax.create') }}">Tax</a></li>
             </ul>
           </li>  
           <li><a href="#" class="active">Portfolio</a></li>
