@@ -8,7 +8,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h2>Formulario Tax 2023</h2>
                 <ol>
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="{{ route('home') }}">Inicio</a></li>
                     <li>Formulario Tax 2023</li>
                 </ol>
             </div>

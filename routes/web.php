@@ -1,6 +1,8 @@
 <?php
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TaxController;
+use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,13 +14,16 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
-
 Route::get('/', function () {
     return view('welcome');
 });
+*/
 
-//Route::get('/', HomeController::class);
+
+
+Route::get('/', HomeController::class)->name('home');
+//Route::get('/web', [WebController::class, 'popular']);
+Route::resource('service', ServiceController::class)->names('service');
 Route::resource('tax', TaxController::class)->names('tax');
 
 /*Route::get('tax', [TaxController::class, 'index']);

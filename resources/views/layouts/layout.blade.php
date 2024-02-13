@@ -50,15 +50,14 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="#"  class="active">Inicio</a></li>
-          <li><a href="#">Servicios</a></li>
+          <li><a href="{{ route('home') }}"  class="active">Inicio</a></li>
+          <li><a href="{{ route('service.index') }}">Servicios</a></li>
           <li class="dropdown"><a href="#"><span>Formularios</span> <i class="bi bi-chevron-down"></i></a>
             <ul>           
               <li><a href="#">Parol Humanitario</a></li>
               <li><a href="{{ route('tax.create') }}">Tax</a></li>
             </ul>
           </li>  
-          <li><a href="#" >Portfolio</a></li>
           <li><a href="#">Contacto</a></li>
 
         </ul>
@@ -105,7 +104,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Portafolio</a></li>
+
               <li><i class="bx bx-chevron-right"></i> <a href="#">Contacto</a></li>
           </ul>
           </div>
