@@ -1,19 +1,21 @@
 @extends('layouts.layout')
   <!-- ======= Hero Section ======= -->
+
+
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url({{ asset('assets/img/slide/test.jpg')}});">
+        <div class="carousel-item active img-fluid" style="background-image: url({{ asset('assets/img/slide/test.jpg')}}); ">
           <div class="carousel-container">
 
           </div>
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url({{ asset('assets/img/slide/test.jpg')}});">
+        <div class="carousel-item" style="background-size: cover; background-image: url({{ asset('assets/img/slide/test1.jpg')}});">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Lorem Ipsum Dolor</h2>
@@ -113,8 +115,67 @@
         </div>
       </section><!-- End Our Team Section -->
 
+          <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/4p.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>I-134A Parol Humanitario</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/1p.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>I-589 Asilo Politico</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/3p.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>I-765 Permiso de Trabajo</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/2p.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>I-821 TPS</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
           <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
+     
         <div class="container">
             <div class="section-title">
                 <h2>Testimonios</h2>
@@ -204,3 +265,43 @@
         </div>
       </section><!-- End Testimonials Section -->
 
+          <!-- ======= Contact Section ======= -->
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="row justify-content-center" data-aos="fade-up">
+
+          <div class="col-lg-10">
+
+              <div class="info-wrap">
+                  <div class="row">
+                      <div class="col-lg-4 info">
+                          <i class="bi bi-geo-alt"></i>
+                          <h4>Location:</h4>
+                          <p>24215 Kuykendahl Rd<br>Tomball, TX 77375</p>
+                      </div>
+
+                      <div class="col-lg-4 info mt-4 mt-lg-0">
+                          <i class="bi bi-envelope"></i>
+                          <h4>Email:</h4>
+                          <p>lugosimmigration@gmail.com</p>
+                      </div>
+
+                      <div class="col-lg-4 info mt-4 mt-lg-0">
+                          <i class="bi bi-phone"></i>
+                          <h4>Call:</h4>
+                          <p>+1 (954) 708-9776</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+
+      </div>
+    </section><!-- End Contact Section -->
+
+      
