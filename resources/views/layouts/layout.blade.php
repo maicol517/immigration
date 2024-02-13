@@ -27,7 +27,7 @@
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ asset('assets/css/style.css')}}" rel="stylesheet"> 
+  <link href="{{ asset('assets/css/style.css')}}?1.1" rel="stylesheet"> 
 
   <!-- =======================================================
   * Template Name: Company
@@ -50,7 +50,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="#">Inicio</a></li>
+          <li><a href="#"  class="active">Inicio</a></li>
           <li><a href="#">Servicios</a></li>
           <li class="dropdown"><a href="#"><span>Formularios</span> <i class="bi bi-chevron-down"></i></a>
             <ul>           
@@ -58,7 +58,7 @@
               <li><a href="{{ route('tax.create') }}">Tax</a></li>
             </ul>
           </li>  
-          <li><a href="#" class="active">Portfolio</a></li>
+          <li><a href="#" >Portfolio</a></li>
           <li><a href="#">Contacto</a></li>
 
         </ul>
@@ -69,7 +69,6 @@
         <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
         <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
       </div>
 
     </div>
@@ -105,7 +104,7 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Servicion</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Portafolio</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Contacto</a></li>
           </ul>
