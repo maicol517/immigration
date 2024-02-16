@@ -22,33 +22,133 @@
         <div class="container">
 
             <div class="row justify-content-center" data-aos="fade-up">
-
-                <div class="col-lg-10">
-                    <!-- form start -->
-                    <div class="info-wrap">
+                <div class="container my-5">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-10">
+                        
                         <form action="{{ route('tax.store') }}" method="POST">
                             @csrf
-                            <div class="card-body  card-outline card-primary">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input type="text" class="form-control" id="" name="name">
-                                    @error('name')
-                                        <span style="color: red">
-                                            {{ $message }}
-                                        </span>
-                                    @enderror
-                                </div>
-                                <br>
-                                <div class="d-flex justify-content-end">
-                                    <button type="submit" class="btn btn-primary ">Save</button>
-                                </div>
+                          <div class="row g-3">
+                            <div class="form-group col-md-6">
+                              <label for="your-name" class="form-label col-form-label">Nombre completo</label>
+                              <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="Full Name" required>
                             </div>
-                            <!-- /.card-body -->
+                            <div class="form-group col-md-6">
+                                <label for="your-name" class="form-label col-form-label">Fecha de Nacimiento</label>
+                                <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="Full Name" required>
+                              </div>
+                            <div class="form-group col-md-6">
+                              <label for="your-surname" class="form-label col-form-label">Nombre completo del conyugue</label>
+                              <input type="text" class="form-control form-control-sm" id="conyugue" name="conyugue" placeholder="Spouse's Full Name" >
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="your-surname" class="form-label col-form-label">Fecha de Nacimiento del conyugue</label>
+                                <input type="text" class="form-control form-control-sm" id="conyugue" name="conyugue" placeholder="Spouse's Full Name" >
+                              </div>
+                              <fieldset class="form-group">
+                                <div class="row">
+                                  <legend class="col-form-label  col-sm-3 pt-0">Estado civil de presentacion</legend>
+                                  <div class="col-sm-9">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                      <label class="form-check-label form-control-sm" for="gridRadios1">
+                                        Soltero
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                      <label class="form-check-label form-control-sm" for="gridRadios2">
+                                        Casado presentando juntos
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                        <label class="form-check-label form-control-sm" for="gridRadios2">
+                                            Casado presentando separados
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                        <label class="form-check-label form-control-sm" for="gridRadios2">
+                                            Cabeza de familia
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                        <label class="form-check-label form-control-sm" for="gridRadios2">
+                                            Viud@ calificado
+                                        </label>
+                                      </div>
+                                  </div>
+                                </div>
+                              </fieldset>
+                            <div class="form-groupcol-md-12">
+                              <label for="your-subject" class="form-label col-form-label">Addres</label>
+                              <input type="text" class="form-control form-control-sm" id="your-subject" name="your-subject" placeholder="subject">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="your-subject" class="form-label col-form-label">City</label>
+                                <input type="text" class="form-control form-control-sm" id="city" name="city" placeholder="City">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                <label for="inputState" class="form-label col-form-label">State</label>
+                                <select id="inputState" class="form-control form-control-sm">
+                                  <option selected>State...</option>
+                                  <option>TX</option>
+                                  <option>FL</option>
+                                </select>
+                              </div>
+                              <fieldset class="form-group">
+                                <div class="row">
+                                  <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                  <div class="col-sm-10">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                      <label class="form-check-label" for="gridRadios1">
+                                        Si
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                      <label class="form-check-label" for="gridRadios2">
+                                        No
+                                      </label>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </fieldset>
 
 
+                              <div class="form-group col-md-6">
+                                <label for="your-subject" class="form-label col-form-label">Telefono</label>
+                                <input type="text" class="form-control form-control-sm" id="phone" name="phone" placeholder="Phone">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="your-subject" class="form-label col-form-label">Correo Electronico</label>
+                                <input type="text" class="form-control form-control-sm" id="email" name="email" placeholder="Email">
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="your-subject" class="form-label col-form-label">Your Subject</label>
+                                <input type="text" class="form-control form-control-sm" id="your-subject" name="your-subject" placeholder="subject">
+                              </div>
+                            <div class="form-group col-12">
+                              <label for="your-message" class="form-label col-form-label">Your Message</label>
+                              <textarea class="form-control form-control-sm" id="your-message" name="your-message" rows="3" placeholder="subject" ></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-primary ">Guardar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </form>
+                      </div>
                     </div>
-                </div>
+                  </div>
+
             </div>
             <br><br>
             <div class="row justify-content-center" data-aos="fade-up">
