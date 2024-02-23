@@ -1,4 +1,10 @@
+<php
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
+?>
 @extends('layouts.layout')
+
+
   <!-- ======= Hero Section ======= -->
 
 
@@ -8,13 +14,18 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active img-fluid" style="background-image: url({{ asset('assets/img/slide/construction.jpg')}}); ">
+        <div class="carousel-item active img-fluid" style="background-image: url({{ asset('assets/img/slide/test123.jpg')}}); ">
           <div class="carousel-container">
 
           </div>
         </div>
 
+        <!-- Slide 2-->
+        <div class="carousel-item active img-fluid" style="background-image: url({{ asset('assets/img/slide/test2.jpg')}}); ">
+          <div class="carousel-container">
 
+          </div>
+        </div>
 
 
 
@@ -295,4 +306,14 @@
       </div>
     </section><!-- End Contact Section -->
 
+    <script>
+Swal.fire({
+  title: 'Error!',
+  text: 'Do you want to continue',
+  icon: 'error',
+  confirmButtonText: 'Cool'
+})
       
+    </script>
+
+

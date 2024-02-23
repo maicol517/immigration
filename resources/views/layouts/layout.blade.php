@@ -25,9 +25,11 @@
   <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  
+
 
   <!-- Template Main CSS File -->
-  <link href="{{ asset('assets/css/style.css')}}?1.1" rel="stylesheet"> 
+  <link href="{{ asset('assets/css/style.css')}}?1.2" rel="stylesheet"> 
 
   <!-- =======================================================
   * Template Name: Company
@@ -156,6 +158,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  
   <script src="{{ asset('assets/vendor/aos/aos.js')}}"></script>
   <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
@@ -166,6 +169,8 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('assets/js/main.js')}}"></script>
+
+  
 
 </body>
 
