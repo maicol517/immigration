@@ -21,7 +21,7 @@ import 'sweetalert2/src/sweetalert2.scss'
         </div>
 
         <!-- Slide 2-->
-        <div class="carousel-item active img-fluid" style="background-image: url({{ asset('assets/img/slide/test2.jpg')}}); ">
+        <div class="carousel-item active img-fluid" style="background-image: url({{ asset('assets/img/slide/slide-1.jpg')}}); ">
           <div class="carousel-container">
 
           </div>
